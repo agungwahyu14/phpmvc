@@ -12,8 +12,8 @@ class User extends Controller{
         $data['judul'] = "User";
         $data["nama"] = $nama;
         $data["pekerjaan"] = $pekerjaan;
-        $this->view("user/profile", $data);
         $this->view("templates/header", $data);
+        $this->view("user/profile", $data);      
         $this->view("templates/footer",$data);
       }
 }
